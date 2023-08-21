@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Witty Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="view">
+      <input type="text" class="inputBox" id="inputBox" disabled><br>
+      <input type="text" class="resultBox" id="resultBox" disabled>
+  </div>
+  <div class="container">
+      <button class="btn edge-btn" id="clear"></button>  <!-- Empty Button for now.-->
+      <button class="btn edge-btn" onclick="cal.clear()">CE</button>
+      <button class="btn edge-btn" onclick="cal.backspace()">
+        <i class="material-icons">backspace</i>
+      </button>
+      <button class="btn edge-btn" onclick="cal.insertOperator('/')">&divide;</button>
+    
+      <button class="btn num-btn" onclick="cal.insertValue('7')">7</button>
+      <button class="btn num-btn" onclick="cal.insertValue('8')">8</button>
+      <button class="btn num-btn" onclick="cal.insertValue('9')">9</button>
+      <button class="btn edge-btn" onclick="cal.insertOperator('*')">&times;</button> 
+    
+      <button class="btn num-btn" onclick="cal.insertValue('4')">4</button>
+      <button class="btn num-btn" onclick="cal.insertValue('5')">5</button>
+      <button class="btn num-btn" onclick="cal.insertValue('6')">6</button>
+      <button class="btn edge-btn" onclick="cal.insertOperator('-')">&minus;</button>
+    
+      <button class="btn num-btn" onclick="cal.insertValue('1')">1</button>
+      <button class="btn num-btn" onclick="cal.insertValue('2')">2</button>
+      <button class="btn num-btn" onclick="cal.insertValue('3')">3</button>
+      <button class="btn edge-btn" onclick="cal.insertOperator('+')">&plus;</button>
+
+      <button class="btn num-btn" onclick="cal.insertDecimal('.')">.</button>
+      <button class="btn num-btn" onclick="cal.insertValue('0')">0</button>
+      <button class="btn num-btn" onclick="cal.insertOperator('%')">&percnt;</button>
+      <button class="btn answer-btn" onclick="cal.finalExe()">=</button>
+  </div>
+    <script src="./script.js"></script>
+</body>
+</html>
