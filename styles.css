@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;;
+  margin: 0;
+}
+body, html {
+  height: 100vh;
+}
+
+.view {
+  display: flex;
+  height: 35%;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: 52%;
+}
+.title {
+  font-family: "Supermercado One", cursive;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  color: #3F51B5
+}
+.resultBox,
+.inputBox {
+  margin: auto;
+  width: 80%;
+  text-align: right;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.resultBox {
+  padding: 10px 10px 15px 10px;
+  font-size: 6vh;
+  color: #7b88d1;
+}
+
+.inputBox {
+  padding: 30px 10px 40px 10px;
+  font-size: 8vh;
+  color: #3F51B5;
+  overflow: hidden;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vh;
+  font-weight: 400;
+  width: 25%;
+  height: 25%;
+  outline: none;
+  border: 1px solid rgb(208, 208, 208);
+  background-color: rgb(250, 250, 250);
+  border-radius: 0px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.num-btn {
+  color: rgb(112, 112, 112);
+}
+
+.edge-btn {
+  color: #3F51B5;
+}
+
+.answer-btn {
+  border: none;
+  background-color: #3F51B5;
+  color: white;
+}
